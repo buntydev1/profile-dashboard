@@ -1,122 +1,146 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.slider {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  overflow: auto;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.slider .menIt Link {
+  margin-top: 100px;
+  font-size: 30px;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.wrapper {
+  height: 600px;
+  width: 900px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgb(96, 96, 96);
+  margin-left: 10%;
+  margin-top: 1%;
 }
 
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.wrapper .title {
+  font-size: 35px;
+  font-weight: 600;
   text-align: center;
+  line-height: 100px;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background-color: firebrick;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+.wrapper form {
+  padding: 10px 30px 50px 30px;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.wrapper form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 50px;
 }
 
-.grid {
+.wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid;
+  border-radius: 11px;
+  transition: all 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+  border-color: black;
+}
+
+.wrapper form .field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+form .field input:focus ~ label,
+form .field input:valid ~ label {
+  top: 0%;
+  font-size: 16px;
+  color: black;
+  background: #fff;
+  transform: translateY(-50%);
+}
+
+form .field input[type="submit"] {
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form .field input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+form .content input {
+  width: 15px;
+  height: 15px;
+  background-color: crimson;
+}
+
+form .content {
   display: flex;
+  width: 50%;
+  height: 50px;
+  font-size: 16px;
+  margin-left: 23%;
+  padding-top: 40px;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+  justify-content: space-around;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.contentLayout {
+  width: 100%;
+  height: 740px;
+  background: grey;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.titleName {
+  margin-left: 45%;
+  font-size: 30px;
+  height: 50%;
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.avatar {
+  margin-left: 45%;
+  height: 50%;
+  margin-top: 5px;
+  padding: 10px;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.inputField {
+  width: 450px;
+  margin-left: 37%;
+  margin-top: 5px;
 }
-
-.logo {
-  height: 1em;
+.inputField input {
+  padding-top: 20px;
+  /* margin: 10px; */
+  margin-top: 30px;
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.inputField button {
+  margin-left: 170px;
+  margin-top: 30px;
 }
