@@ -97,7 +97,7 @@ form .field input[type="submit"]:active {
 form .content input {
   width: 15px;
   height: 15px;
-  background-color: crimson;
+  background-color: firebrick;
 }
 
 form .content {
@@ -137,7 +137,6 @@ form .content {
 }
 .inputField input {
   padding-top: 20px;
-  /* margin: 10px; */
   margin-top: 30px;
 }
 .inputField button {

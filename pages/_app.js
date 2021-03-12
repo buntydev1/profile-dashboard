@@ -27,21 +27,24 @@ function MyApp({ Component, pageProps }) {
                 <a>Home</a>
               </Link>
             </Menu.Item>
-            <Menu.Item key="3" icon={<UserOutlined />}>
+            <Menu.Item key="2" icon={<UserOutlined />}>
               <Link href="/Profile">
                 <a>Profile</a>
               </Link>
             </Menu.Item>
-            <Menu.Item key="4" icon={<BarChartOutlined />}>
+            <Menu.Item key="3" icon={<BarChartOutlined />}>
+              <a>nav 3</a>
+            </Menu.Item>
+            <Menu.Item key="4" icon={<CloudOutlined />}>
               <a>nav 4</a>
             </Menu.Item>
-            <Menu.Item key="5" icon={<CloudOutlined />}>
+            <Menu.Item key="5" icon={<AppstoreOutlined />}>
               <a>nav 5</a>
             </Menu.Item>
-            <Menu.Item key="6" icon={<AppstoreOutlined />}>
+            <Menu.Item key="6" icon={<TeamOutlined />}>
               <a>nav 6</a>
             </Menu.Item>
-            <Menu.Item key="7" icon={<TeamOutlined />}>
+            <Menu.Item key="7" icon={<ShopOutlined />}>
               <a>nav 7</a>
             </Menu.Item>
             <Menu.Item key="8" icon={<ShopOutlined />}>
@@ -50,33 +53,34 @@ function MyApp({ Component, pageProps }) {
             <Menu.Item key="9" icon={<ShopOutlined />}>
               <a>nav 9</a>
             </Menu.Item>
-            <Menu.Item key="9" icon={<ShopOutlined />}>
-              <a>nav 9</a>
+
+            <Menu.Item key="10" icon={<ShopOutlined />}>
+              <a>nav 120</a>
             </Menu.Item>
-            <Menu.Item key="9" icon={<ShopOutlined />}>
-              <a>nav 9</a>
+            <Menu.Item key="11" icon={<ShopOutlined />}>
+              <a>nav 11</a>
             </Menu.Item>
-            <Menu.Item key="9" icon={<ShopOutlined />}>
-              <a>nav 9</a>
+            <Menu.Item key="12" icon={<ShopOutlined />}>
+              <a>nav 12</a>
             </Menu.Item>
-            <Menu.Item key="9" icon={<ShopOutlined />}>
-              <a>nav 9</a>
+            <Menu.Item key="14" icon={<ShopOutlined />}>
+              <a>nav 14</a>
             </Menu.Item>
-            <Menu.Item key="9" icon={<ShopOutlined />}>
-              <a>nav 9</a>
+            <Menu.Item key="15" icon={<ShopOutlined />}>
+              <a>nav 15</a>
             </Menu.Item>
-            <Menu.Item key="9" icon={<ShopOutlined />}>
-              <a>nav 9</a>
-            </Menu.Item>{" "}
-            <Menu.Item key="9" icon={<ShopOutlined />}>
-              <a>nav 9</a>
+            <Menu.Item key="16" icon={<ShopOutlined />}>
+              <a>nav 16</a>
+            </Menu.Item>
+            <Menu.Item key="17" icon={<ShopOutlined />}>
+              <a>nav 17</a>
             </Menu.Item>
           </Menu>
         </div>
       </Sider>
       <Layout>
-        <Content style={{ margin: "0 16px" }}>
-          <Component {...pageProps} />;
+        <Content>
+          <Component {...pageProps} />
         </Content>
       </Layout>
     </Layout>
